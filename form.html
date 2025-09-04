@@ -3,32 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <title>Form Pendaftaran</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Form Pendaftaran</h1>
+  <h1 style="font-size: 2.5em; font-family: 'Pacifico', cursive; font-weight: 400; color: #333;">Form Pendaftaran</h1>
+
   <form>
-    <label>Nama Lengkap: <input type="text"></label><br>
-    <label>Jenis Kelamin:
-      <input type="radio" name="jk" value="Laki-laki"> Laki-laki
-      <input type="radio" name="jk" value="Perempuan"> Perempuan
-    </label><br>
-    <label>Tempat Lahir: <input type="text"></label><br>
-    <label>Tanggal Lahir: <input type="date"></label><br>
-    <label>Hobi:
-      <input type="checkbox" value="Membaca"> Membaca
-      <input type="checkbox" value="Olahraga"> Olahraga
-      <input type="checkbox" value="Musik"> Musik
-    </label><br>
-    <label>Password: <input type="password"></label><br>
-    <label><input type="checkbox"> Saya menyetujui syarat & ketentuan</label><br>
-    <button type="reset">Reset</button>
-    <button type="submit">Submit</button>
+    <table border="0" cellspacing="0" cellpadding="8" style="margin-left:180px; font-size:1.25em;">
+      <tr>
+        <td width="200" align="left"><label for="nama"><b>Nama Lengkap</b></label></td>
+        <td width="40" align="center"><b>:</b></td>
+        <td><input type="text" id="nama" name="nama" style="font-size:1.15em;"></td>
+      </tr>
+      <tr>
+        <td align="left"><b>Jenis Kelamin</b></td>
+        <td align="center"><b>:</b></td>
+        <td>
+          <input type="radio" name="jk" value="Laki-laki" id="jk-l" style="font-size:1.15em;"> <label for="jk-l" style="font-size:1.15em;">Laki-laki</label>
+          <input type="radio" name="jk" value="Perempuan" id="jk-p" style="font-size:1.15em;"> <label for="jk-p" style="font-size:1.15em;">Perempuan</label>
+        </td>
+      </tr>
+      <tr>
+        <td align="left"><b>Tempat Lahir</b></td>
+        <td align="center"><b>:</b></td>
+        <td><input type="text" id="tempat" name="tempat" style="font-size:1.15em;"></td>
+      </tr>
+      <tr>
+        <td align="left"><b>Tanggal Lahir</b></td>
+        <td align="center"><b>:</b></td>
+        <td><input type="date" id="tanggal" name="tanggal" style="font-size:1.15em;"></td>
+      </tr>
+      <tr>
+        <td align="left"><b>Hobi</b></td>
+        <td align="center"><b>:</b></td>
+        <td>
+          <input type="checkbox" name="hobi" value="Membaca" id="hobi-membaca" style="font-size:1.15em;"> <label for="hobi-membaca" style="font-size:1.15em;">Membaca</label>
+          <input type="checkbox" name="hobi" value="Olahraga" id="hobi-olahraga" style="font-size:1.15em;"> <label for="hobi-olahraga" style="font-size:1.15em;">Olahraga</label>
+          <input type="checkbox" name="hobi" value="Musik" id="hobi-musik" style="font-size:1.15em;"> <label for="hobi-musik" style="font-size:1.15em;">Musik</label>
+        </td>
+      </tr>
+      <tr>
+        <td align="left"><b>Password</b></td>
+        <td align="center"><b>:</b></td>
+        <td><input type="password" id="password" name="password" style="font-size:1.15em;"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>
+          <input type="checkbox" id="syarat" name="syarat" style="font-size:1.15em;"> <label for="syarat" style="font-size:1.15em;">Saya menyetujui syarat & ketentuan</label>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>
+          <button type="reset" style="font-size:1.15em;">Reset</button>
+          <button type="submit" style="font-size:1.15em;">Submit</button>
+        </td>
+      </tr>
+    </table>
   </form>
 
-  <nav>
-    <a href="blog.html">Blog</a> |
-    <a href="nilai.html">Tabel Nilai</a> |
-    <a href="cv.html">Curriculum Vitae</a>
-  </nav>
+  <div style="margin:30px 0 0 180px;">
+    <a href="blog.html" style="display:inline-block; padding:12px 36px; font-size:1.2em; text-decoration:none; color:#333; background:#f2f2f2; border-radius:8px; margin-right:18px;">Blog</a>
+    <a href="nilai.html" style="display:inline-block; padding:12px 36px; font-size:1.2em; text-decoration:none; color:#333; background:#f2f2f2; border-radius:8px; margin-right:18px;">Tabel Nilai</a>
+    <a href="cv.html" style="display:inline-block; padding:12px 36px; font-size:1.2em; text-decoration:none; color:#333; background:#f2f2f2; border-radius:8px;">Curriculum Vitae</a>
+  </div>
 </body>
 </html>
